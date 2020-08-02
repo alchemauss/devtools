@@ -1,0 +1,33 @@
+{
+  "name": "@ignatiusmb/dev-kit",
+  "author": "Ignatius Bagus",
+  "homepage": "https://github.com/ignatiusmb/dev-kit#readme",
+  "description": "Mauss development toolkit",
+  "version": "0.0.1",
+  "license": "MIT",
+  "module": "index.js",
+  "svelte": "svelte/index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "development",
+    "kit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignatiusmb/dev-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ignatiusmb/dev-kit/issues"
+  },
+  "files": [
+    "src",
+    "svelte",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "svelte": "^3.24.0"
+  }
+}
