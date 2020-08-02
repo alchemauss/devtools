@@ -5,6 +5,7 @@
   "description": "Mauss development toolkit",
   "version": "0.0.1",
   "license": "MIT",
+  "type": "module",
   "module": "index.js",
   "svelte": "svelte/index.js",
   "types": "index.d.ts",
@@ -28,6 +29,7 @@
   "scripts": {},
   "dependencies": {},
   "devDependencies": {
+    "@ignatiusmb/elements": "^0.2.2",
     "svelte": "^3.24.0"
   }
 }
