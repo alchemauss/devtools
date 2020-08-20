@@ -1,6 +1,6 @@
 <script>
 	export let repo, path;
-	import { Link, Icon } from '@ignatiusmb/elements/essentials';
+	import { Link, Icon } from '@ignatiusmb/elements';
 	const link = `https://github.com/${repo}/edit/master`;
 </script>
 

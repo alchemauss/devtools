@@ -1,6 +1,6 @@
 <script>
 	export let sections, repo;
-	import { Link, Icon } from '@ignatiusmb/elements/essentials';
+	import { Link, Icon } from '@ignatiusmb/elements';
 	import Edit from './components/Edit.svelte';
 	const indexer = (num) => `0${num}`.slice(-2);
 	let anchor = false;
@@ -77,9 +77,12 @@
 	section h2 > :global(a:first-child) {
 		position: absolute;
 		left: -0.15em;
-		transform: translateX(-100%) rotate(-45deg);
+		transform: translate(-95%, -5%);
 		transition: opacity 240ms;
 		opacity: 0;
+	}
+	section h2 > :global(a:first-child) {
+		transform: rotate(-45deg);
 	}
 	section h2.anchor > :global(a:first-child) {
 		opacity: 1;
