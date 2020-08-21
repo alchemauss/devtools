@@ -3,7 +3,7 @@
   "author": "Ignatius Bagus",
   "homepage": "https://github.com/ignatiusmb/dev-kit#readme",
   "description": "Mauss development toolkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "module": "index.js",
   "svelte": "svelte/index.js",
@@ -28,6 +28,7 @@
   "scripts": {},
   "dependencies": {},
   "devDependencies": {
-    "svelte": "^3.24.0"
+    "@ignatiusmb/elements": "^0.3.1",
+    "svelte": "^3.24.1"
   }
 }
