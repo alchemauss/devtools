@@ -5,9 +5,10 @@
   "description": "Mauss development toolkit",
   "version": "0.0.2",
   "license": "MIT",
-  "module": "index.js",
-  "svelte": "svelte/index.js",
-  "types": "index.d.ts",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "svelte": "src/index.js",
+  "types": "src/index.d.ts",
   "keywords": [
     "development",
     "kit"
@@ -20,10 +21,7 @@
     "url": "https://github.com/ignatiusmb/dev-kit/issues"
   },
   "files": [
-    "src",
-    "svelte",
-    "index.js",
-    "index.d.ts"
+    "src"
   ],
   "scripts": {},
   "dependencies": {},

@@ -14,9 +14,8 @@ jobs:
         with:
           node-version: "12.x"
           registry-url: "https://registry.npmjs.org"
-      - name: Install and publish
+      - name: Publish source folder
         run: |
-          npm install
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
