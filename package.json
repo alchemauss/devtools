@@ -3,7 +3,7 @@
   "author": "Ignatius Bagus",
   "homepage": "https://github.com/ignatiusmb/dev-kit#readme",
   "description": "Mauss development toolkit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "src/index.js",
   "module": "src/index.js",
