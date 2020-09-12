@@ -1,4 +1,4 @@
-export function RSS(channel: RSSChannel, items: RSSItem[]): string;
+export default function RSS(channel: RSSChannel, items: RSSItem[]): string;
 
 interface RSSChannel {
 	domain: string;
