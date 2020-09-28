@@ -16,7 +16,11 @@
 	<article>
 		{#each sections as { slug, title, content, path }}
 			<section>
-				<h2 id={slug} class:anchor on:mouseenter={() => (anchor = true)} on:mouseleave={() => (anchor = false)}>
+				<h2
+					id={slug}
+					class:anchor
+					on:mouseenter={() => (anchor = true)}
+					on:mouseleave={() => (anchor = false)}>
 					<Link href="#{slug}">
 						<Icon name="link" />
 					</Link>
@@ -129,7 +133,7 @@
 
 	@media only screen and (min-width: 769px) {
 		main {
-			grid-template-columns: minmax(12em, 20%) minmax(0, 1fr);
+			grid-template-columns: minmax(12em, 20%) minmax(0, 60em);
 		}
 
 		aside {
