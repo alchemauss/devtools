@@ -1,4 +1,4 @@
-const chars: { [key: string]: string } = {
+const chars = {
 	'"': 'quot',
 	"'": '#39',
 	'&': 'amp',
@@ -6,17 +6,17 @@ const chars: { [key: string]: string } = {
 	'>': 'gt',
 };
 
-const formatPubDate = (date: string) => {
+const formatPubDate = (date) => {
 	const formatted = new Date(date);
 	return formatted.toUTCString();
 };
-const clean = (html: string) => {
+const clean = (html) => {
 	if (!html) return '';
 	return html.replace(/["'&<>]/g, (c) => `&${chars[c]};`);
 };
 
-export default function RSS(channel: RSSChannel, items: RSSItem[]) {
-	const createItem = (item: RSSItem) => `
+export default function RSS(channel, items) {
+	const createItem = (item) => `
 		<item>
 			<title>${clean(item.title)}</title>
 			<link>https://${channel.domain}/${clean(item.slug)}</link>
@@ -43,19 +43,4 @@ export default function RSS(channel: RSSChannel, items: RSSItem[]) {
 	</rss>`;
 
 	return xml.replace(/>[^\S]+/gm, '>').trim();
-}
-
-interface RSSChannel {
-	domain: string;
-	image?: string;
-	title: string;
-	slug: string;
-	description: string;
-	language?: string;
-}
-interface RSSItem {
-	title: string;
-	slug: string;
-	description: string;
-	date: string;
 }
