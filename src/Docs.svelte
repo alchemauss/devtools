@@ -1,9 +1,26 @@
 <script>
 	export let sections, repo;
+	import { onMount } from 'svelte';
 	import { Link, Icon } from '@ignatiusmb/elements';
 	import Edit from './components/Edit.svelte';
 	const indexer = (num) => `0${num}`.slice(-2);
 	let anchor = false;
+
+	let active;
+	onMount(async () => {
+		const anchors = document.querySelectorAll('[id]');
+		let positions = [];
+		let last_id = window.location.hash.slice(1);
+		window.addEventListener('scroll', () => {
+			const top = -window.scrollY;
+			for (let i = anchors.length; i > 0; i--) {
+				if (positions[i] + top >= 40) continue;
+				const { id } = anchors[i];
+				if (id === last_id) return;
+				active = last_id = id;
+			}
+		});
+	});
 </script>
 
 <main>
