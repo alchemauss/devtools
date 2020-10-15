@@ -1,12 +1,12 @@
 <script>
 	export let repo, path;
-	import { Link, Icon } from '@ignatiusmb/elements';
+	import { Feather, Link } from '@ignatiusmb/elements';
 	const link = `https://github.com/${repo}/edit/master`;
 </script>
 
 <span>
 	<Link href="{link}/{path}">
-		<Icon name="edit" />
+		<Feather.Edit />
 	</Link>
 </span>
 
