@@ -1,6 +1,6 @@
 # @ignatiusmb/dev-kit changelog
 
-## Unreleased
+## 0.0.4
 
 - Fix breaking changes from elements ([#4](https://github.com/ignatiusmb/dev-kit/pull/4))
 - Convert `rss.ts` to `rss.js` and fix import conflict ([#3](https://github.com/ignatiusmb/dev-kit/pull/3))
