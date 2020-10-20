@@ -80,13 +80,12 @@
 	}
 	section h2 > :global(a:first-child) {
 		position: absolute;
+		top: 50%;
 		left: -0.15em;
-		transform: translate(-95%, -5%);
+		display: flex;
+		transform: translate(-95%, -50%);
 		transition: opacity 240ms;
 		opacity: 0;
-	}
-	section h2 > :global(a:first-child) {
-		transform: rotate(-45deg);
 	}
 	section h2.anchor > :global(a:first-child) {
 		opacity: 1;
