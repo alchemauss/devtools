@@ -1,6 +1,6 @@
 # @ignatiusmb/dev-kit changelog
 
-## 0.0.5
+## Unreleased
 
 - Fix anchor tag alignment for headings ([#5](https://github.com/ignatiusmb/dev-kit/pull/5))
 
