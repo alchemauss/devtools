@@ -1,5 +1,9 @@
 # @ignatiusmb/dev-kit changelog
 
+## 0.0.5
+
+- Fix anchor tag alignment for headings ([#5](https://github.com/ignatiusmb/dev-kit/pull/5))
+
 ## 0.0.4
 
 - Fix breaking changes from elements ([#4](https://github.com/ignatiusmb/dev-kit/pull/4))
