@@ -1,6 +1,7 @@
 <script>
 	export let sections, repo;
-	import { Feather, Link } from '@ignatiusmb/elements';
+	import { Feather } from 'svelement/icons';
+	import { Link } from 'svelement';
 	import Edit from './components/Edit.svelte';
 	const indexer = (num) => `0${num}`.slice(-2);
 	let anchor = false;

@@ -1,6 +1,7 @@
 <script>
 	export let repo, path;
-	import { Feather, Link } from '@ignatiusmb/elements';
+	import { Feather } from 'svelement/icons';
+	import { Link } from 'svelement';
 	const link = `https://github.com/${repo}/edit/master`;
 </script>
 
