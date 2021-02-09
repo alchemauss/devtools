@@ -1,5 +1,5 @@
-// svelte components
-export { default as Docs } from './Docs.svelte';
-
-// utility files
-export { default as RSS } from './rss';
+import { SvelteComponentTyped } from 'svelte';
+export class Docs extends SvelteComponentTyped<{
+	sections: Record<'slug' | 'title' | 'content' | 'path', string>;
+	repo: string;
+}> {}
