@@ -1,19 +1,6 @@
-const chars = {
-	'"': 'quot',
-	"'": '#39',
-	'&': 'amp',
-	'<': 'lt',
-	'>': 'gt',
-};
-
-const formatPubDate = (date) => {
-	const formatted = new Date(date);
-	return formatted.toUTCString();
-};
-const clean = (html) => {
-	if (!html) return '';
-	return html.replace(/["'&<>]/g, (c) => `&${chars[c]};`);
-};
+const chars = { '"': 'quot', "'": '#39', '&': 'amp', '<': 'lt', '>': 'gt' };
+const formatPubDate = (date) => new Date(date).toUTCString();
+const clean = (html) => (!html ? '' : html.replace(/["'&<>]/g, (c) => `&${chars[c]};`));
 
 export default function RSS(channel, items) {
 	const createItem = (item) => `
