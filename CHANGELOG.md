@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Move `RSS` export to `dev-kit/rss` ([#6](https://github.com/ignatiusmb/dev-kit/pull/6))
 - Fix anchor tag alignment for headings ([#5](https://github.com/ignatiusmb/dev-kit/pull/5))
 
 ## 0.0.4

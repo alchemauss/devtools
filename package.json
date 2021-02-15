@@ -1,18 +1,19 @@
 {
   "name": "@ignatiusmb/dev-kit",
   "author": "Ignatius Bagus",
-  "homepage": "https://github.com/ignatiusmb/dev-kit#readme",
   "description": "Mauss development toolkit",
   "version": "0.0.4",
   "license": "MIT",
+  "homepage": "https://github.com/ignatiusmb/dev-kit#readme",
   "main": "src/index.js",
   "module": "src/index.js",
   "svelte": "src/index.js",
   "types": "src/index.d.ts",
-  "keywords": [
-    "development",
-    "kit"
-  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.js",
+    "./rss": "./src/utils/rss.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ignatiusmb/dev-kit.git"
@@ -20,14 +21,15 @@
   "bugs": {
     "url": "https://github.com/ignatiusmb/dev-kit/issues"
   },
-  "files": [
-    "src"
+  "keywords": [
+    "development",
+    "kit"
   ],
-  "scripts": {},
-  "dependencies": {
-    "@ignatiusmb/elements": "0.7.0"
+  "peerDependencies": {
+    "svelement": "0.0.10",
+    "svelte": "^3.32.1"
   },
   "devDependencies": {
-    "svelte": "^3.29.0"
+    "svelement": "0.0.10"
   }
 }
