@@ -2,18 +2,19 @@
   "name": "@mauss/devtools",
   "author": "Ignatius Bagus",
   "description": "Mauss development toolkit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
-  "main": "src/index.js",
-  "module": "src/index.js",
-  "types": "src/index.d.ts",
-  "svelte": "src/index.js",
+  "type": "module",
+  "main": "svelte/index.js",
+  "svelte": "svelte/index.js",
+  "types": "svelte/index.d.ts",
   "scripts": {
-    "prepublishOnly": "tsc -d && prettier -wu src/**"
+    "prepublishOnly": "tsc -d && prettier -wu utils/**"
   },
   "exports": {
-    "./package.json": "./package.json",
-    ".": "./src/index.js"
+    ".": "./svelte/index.js",
+    "./utils": "./utils/index.js",
+    "./package.json": "./package.json"
   },
   "repository": {
     "type": "git",
