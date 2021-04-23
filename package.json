@@ -9,6 +9,7 @@
   "types": "index.d.ts",
   "svelte": "svelte/index.js",
   "scripts": {
+    "clean": "git clean -dfx -e node_modules",
     "prepublishOnly": "tsc -d && prettier -wu utils/**"
   },
   "exports": {
