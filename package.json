@@ -5,14 +5,15 @@
   "version": "0.1.0",
   "license": "MIT",
   "type": "module",
-  "main": "svelte/index.js",
+  "main": "index.js",
+  "types": "index.d.ts",
   "svelte": "svelte/index.js",
-  "types": "svelte/index.d.ts",
   "scripts": {
     "prepublishOnly": "tsc -d && prettier -wu utils/**"
   },
   "exports": {
-    ".": "./svelte/index.js",
+    ".": "./index.js",
+    "./svelte": "./svelte/index.js",
     "./utils": "./utils/index.js",
     "./package.json": "./package.json"
   },
