@@ -4,12 +4,17 @@
 	"singleQuote": true,
 	"tabWidth": 2,
 	"useTabs": true,
-	"svelteSortOrder": "scripts-markup-styles-options",
-	"svelteStrictMode": false,
-	"svelteBracketNewLine": false,
-	"svelteAllowShorthand": true,
-	"svelteIndentScriptAndStyle": true,
 	"overrides": [
+		{
+			"files": ["*.svelte"],
+			"options": {
+				"svelteSortOrder": "scripts-markup-styles-options",
+				"svelteStrictMode": false,
+				"svelteBracketNewLine": false,
+				"svelteAllowShorthand": true,
+				"svelteIndentScriptAndStyle": true
+			}
+		},
 		{
 			"files": ["README.md", "package.json"],
 			"options": { "useTabs": false }

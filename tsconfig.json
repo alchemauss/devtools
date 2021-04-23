@@ -1,3 +1,4 @@
 {
-	"extends": "mauss/tsconfig.json"
+	"extends": "mauss/tsconfig.json",
+	"include": ["utils/**/*"]
 }
