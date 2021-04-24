@@ -13,9 +13,15 @@
     "prepublishOnly": "tsc -d && prettier -wu utils/**"
   },
   "exports": {
-    ".": "./index.js",
-    "./svelte": "./svelte/index.js",
-    "./utils": "./utils/index.js",
+    ".": {
+      "import": "./index.js"
+    },
+    "./svelte": {
+      "import": "./svelte/index.js"
+    },
+    "./utils": {
+      "import": "./utils/index.js"
+    },
     "./package.json": "./package.json"
   },
   "repository": {
