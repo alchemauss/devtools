@@ -1,3 +1,5 @@
 node_modules
 
-.DS_Store
+!utils/*.ts
+utils/*.js
+utils/*.d.ts
