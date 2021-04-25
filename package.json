@@ -36,7 +36,7 @@
     "toolkit"
   ],
   "peerDependencies": {
-    "svelement": "0.0.10",
+    "svelement": "^0.0.10",
     "svelte": "^3.32.1"
   },
   "devDependencies": {
