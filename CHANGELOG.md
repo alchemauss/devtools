@@ -1,6 +1,6 @@
 # @mauss/devtools changelog
 
-## Unreleased
+## 0.1.0
 
 - add `Docs` and `RSS` to top-level imports
 - add `/svelte` and `/utils` to exports map

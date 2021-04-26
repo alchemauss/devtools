@@ -2,7 +2,7 @@
   "name": "@mauss/devtools",
   "author": "Ignatius Bagus",
   "description": "Mauss development toolkit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "main": "index.js",
