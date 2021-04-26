@@ -13,7 +13,7 @@
     "preversion": "tsc --noEmit",
     "version": "node update.mjs && git add CHANGELOG.md",
     "postversion": "git push --follow-tags",
-    "prepublishOnly": "tsc -d && prettier -wu utils/**"
+    "prepublishOnly": "npm ci && tsc -d && prettier -wu utils/**"
   },
   "exports": {
     ".": {
