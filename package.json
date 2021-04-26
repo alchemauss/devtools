@@ -10,6 +10,9 @@
   "svelte": "svelte/index.js",
   "scripts": {
     "clean": "git clean -dfx -e node_modules",
+    "preversion": "tsc --noEmit",
+    "version": "node update.mjs && git add CHANGELOG.md",
+    "postversion": "git push --follow-tags",
     "prepublishOnly": "tsc -d && prettier -wu utils/**"
   },
   "exports": {
@@ -26,23 +29,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ignatiusmb/devtools.git"
+    "url": "git+https://github.com/devmauss/devtools.git"
   },
   "bugs": {
-    "url": "https://github.com/ignatiusmb/devtools/issues"
+    "url": "https://github.com/devmauss/devtools/issues"
   },
   "keywords": [
     "development",
     "toolkit"
   ],
   "peerDependencies": {
-    "svelement": "^0.0.10",
+    "svelement": "^0.0.11",
     "svelte": "^3.32.1"
   },
   "devDependencies": {
     "mauss": "^0.0.9",
     "prettier": "^2.2.1",
-    "svelement": "0.0.10",
+    "svelement": "0.0.11",
     "typescript": "^4.2.4"
   }
 }

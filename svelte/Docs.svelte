@@ -1,7 +1,7 @@
 <script>
 	export let sections, repo;
-	import { Feather } from 'svelement/icons';
 	import { Link } from 'svelement';
+	import { Link as LinkIcon } from 'svelement/icons/feather';
 	import Edit from './components/Edit.svelte';
 	const indexer = (num) => `0${num}`.slice(-2);
 	let anchor = false;
@@ -23,7 +23,7 @@
 					on:mouseenter={() => (anchor = true)}
 					on:mouseleave={() => (anchor = false)}>
 					<Link href="#{slug}">
-						<Feather.Link />
+						<LinkIcon />
 					</Link>
 					<span>{title}</span>
 					<Edit {repo} {path} />

@@ -1,13 +1,13 @@
 <script>
 	export let repo, path;
-	import { Feather } from 'svelement/icons';
 	import { Link } from 'svelement';
+	import { Edit } from 'svelement/icons/feather';
 	const link = `https://github.com/${repo}/edit/master`;
 </script>
 
 <span>
 	<Link href="{link}/{path}">
-		<Feather.Edit />
+		<Edit />
 	</Link>
 </span>
 

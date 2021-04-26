@@ -1,16 +1,8 @@
 # @mauss/devtools changelog
 
-## 0.0.1
+## Unreleased
 
-- Publish under new scope `@mauss`
-- Fix anchor tag alignment for headings ([#5](https://github.com/ignatiusmb/dev-kit/pull/5))
-
-## (dev-kit) 0.0.4
-
-- Fix breaking changes from elements ([#4](https://github.com/ignatiusmb/dev-kit/pull/4))
-- Convert `rss.ts` to `rss.js` and fix import conflict ([#3](https://github.com/ignatiusmb/dev-kit/pull/3))
-
-## (dev-kit) 0.0.3
-
-- Add `Docs` pages
-- Add `rss` maker
+- add `Docs` and `RSS` to top-level imports
+- add `/svelte` and `/utils` to exports map
+- add declaration types to Svelte components
+- use TypeScript to develop `utils` module
