@@ -1,12 +1,15 @@
 <script>
-	export let repo, path;
-	import { Link } from 'svelement';
-	import { Edit } from 'svelement/icons/feather';
-	const link = `https://github.com/${repo}/edit/master`;
+	/** @type {string} */
+	export let repo;
+	/** @type {string} */
+	export let path;
+
+	import { Link } from 'syv';
+	import { Edit } from 'syv/icons/feather';
 </script>
 
 <span>
-	<Link href="{link}/{path}">
+	<Link href="https://github.com/{repo}/edit/master/{path}">
 		<Edit />
 	</Link>
 </span>

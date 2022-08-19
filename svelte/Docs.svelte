@@ -1,8 +1,23 @@
 <script>
-	export let sections, repo;
-	import { Link } from 'svelement';
-	import { Link as LinkIcon } from 'svelement/icons/feather';
+	/**
+	 * @typedef {{
+	 * 	slug: string;
+	 * 	title: string;
+	 * 	content: string;
+	 * 	path: string;
+	 * }} Section
+	 */
+
+	/** @type {Section[]} */
+	export let sections;
+	/** @type {string} */
+	export let repo;
+
+	import { Link } from 'syv';
+	import { Link as LinkIcon } from 'syv/icons/feather';
 	import Edit from './components/Edit.svelte';
+
+	/** @param {number} num */
 	const indexer = (num) => `0${num}`.slice(-2);
 	let anchor = false;
 </script>
@@ -21,7 +36,8 @@
 					id={slug}
 					class:anchor
 					on:mouseenter={() => (anchor = true)}
-					on:mouseleave={() => (anchor = false)}>
+					on:mouseleave={() => (anchor = false)}
+				>
 					<Link href="#{slug}">
 						<LinkIcon />
 					</Link>
