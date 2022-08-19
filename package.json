@@ -5,11 +5,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "type": "module",
-  "main": "index.js",
   "types": "index.d.ts",
   "svelte": "svelte/index.js",
   "scripts": {
-    "clean": "git clean -dfx -e node_modules",
+    "clean": "git add * && git clean -dfx -e node_modules",
     "preversion": "tsc --noEmit",
     "version": "node update.mjs && git add CHANGELOG.md",
     "postversion": "git push --follow-tags",
