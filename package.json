@@ -17,15 +17,9 @@
   },
   "prettier": "mauss/prettier.json",
   "exports": {
-    ".": {
-      "import": "./index.js"
-    },
-    "./svelte": {
-      "import": "./svelte/index.js"
-    },
-    "./utils": {
-      "import": "./utils/index.js"
-    },
+    ".": "./index.js",
+    "./svelte": "./svelte/index.js",
+    "./utils": "./utils/index.js",
     "./package.json": "./package.json"
   },
   "repository": {
