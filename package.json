@@ -9,10 +9,7 @@
   "svelte": "svelte/index.js",
   "scripts": {
     "clean": "git add * && git clean -dfx -e node_modules",
-    "preversion": "tsc --noEmit",
-    "version": "node update.mjs && git add CHANGELOG.md",
-    "postversion": "git push --follow-tags",
-    "prepublishOnly": "npm ci && tsc -d && prettier -wu utils/**"
+    "prepublishOnly": "npm ci && prettier -wu utils/**"
   },
   "prettier": "mauss/prettier.json",
   "exports": {
