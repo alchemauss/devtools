@@ -1,6 +1,6 @@
 # @mauss/devtools changelog
 
-## Unreleased
+## 0.2.0
 
 - replace `svelement` with `syv`
 - export native `.js` files instead
