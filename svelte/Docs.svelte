@@ -1,14 +1,5 @@
 <script>
-	/**
-	 * @typedef {{
-	 * 	slug: string;
-	 * 	title: string;
-	 * 	content: string;
-	 * 	path: string;
-	 * }} Section
-	 */
-
-	/** @type {Section[]} */
+	/** @type {import('./types.js').Section[]} */
 	export let sections;
 	/** @type {string} */
 	export let repo;
