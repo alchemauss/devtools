@@ -1,12 +1,20 @@
-const chars: Record<string, string> = { '"': 'quot', "'": '#39', '&': 'amp', '<': 'lt', '>': 'gt' };
-const clean = (html: string) => (!html ? '' : html.replace(/["'&<>]/g, (c) => `&${chars[c]};`));
+const chars = { '"': 'quot', "'": '#39', '&': 'amp', '<': 'lt', '>': 'gt' };
 
-export default function (
-	channel: Record<'domain' | 'title' | 'description', string> &
-		Partial<Record<'base' | 'image' | 'lang', string>>,
-	items: Array<Record<'title' | 'slug' | 'description' | 'date', string>>
-): string {
-	const createItem = (item: typeof items[0]) => `
+/** @param {string} html */
+function clean(html) {
+	if (!(html = html.trim())) return '';
+	return html.replace(/["'&<>]/g, (c) => `&${chars[/** @type {keyof typeof chars} */ (c)]};`);
+}
+
+/**
+ * @typedef {Record<'domain' | 'title' | 'description', string> & Partial<Record<'base' | 'image' | 'lang', string>>} Channel
+ * @typedef {Array<Record<'title' | 'slug' | 'description' | 'date', string>>} Items
+ */
+
+/** @type {(channel: Channel, items: Items) => string} */
+export default function (channel, items) {
+	/** @param {typeof items[number]} item */
+	const createItem = (item) => `
 		<item>
 			<title>${clean(item.title)}</title>
 			<link>https://${channel.domain}/${clean(item.slug)}</link>
