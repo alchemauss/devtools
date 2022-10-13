@@ -8,8 +8,7 @@
   "types": "index.d.ts",
   "svelte": "svelte/index.js",
   "scripts": {
-    "clean": "git add * && git clean -dfx -e node_modules",
-    "prepublishOnly": "npm ci && prettier -wu utils/**"
+    "clean": "git add * && git clean -dfx -e node_modules"
   },
   "prettier": "mauss/prettier.json",
   "exports": {
