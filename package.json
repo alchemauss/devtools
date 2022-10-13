@@ -10,20 +10,15 @@
   "scripts": {
     "clean": "git add * && git clean -dfx -e node_modules"
   },
-  "prettier": "mauss/prettier.json",
   "exports": {
     ".": "./index.js",
     "./svelte": "./svelte/index.js",
     "./utils": "./utils/index.js",
     "./package.json": "./package.json"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devmauss/devtools.git"
-  },
-  "bugs": {
-    "url": "https://github.com/devmauss/devtools/issues"
-  },
+  "prettier": "mauss/prettier.json",
+  "repository": "github:alchemauss/devtools",
+  "bugs": "https://github.com/alchemauss/devtools/issues",
   "keywords": [
     "development",
     "toolkit"
