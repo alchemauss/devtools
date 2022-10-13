@@ -1,5 +1,11 @@
 # @mauss/devtools changelog
 
+## Unreleased
+
+- replace `svelement` with `syv`
+- export native `.js` files instead
+- bump `svelte` peerDep version
+
 ## 0.1.0
 
 - add `Docs` and `RSS` to top-level imports
